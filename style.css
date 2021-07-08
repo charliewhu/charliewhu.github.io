@@ -14,3 +14,7 @@ ul.no-bullets {
 a:link {
   text-decoration: none;
 }
+
+a:hover {
+  text-decoration: underline;
+}
