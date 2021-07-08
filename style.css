@@ -1,0 +1,12 @@
+ul.no-bullets {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+  }
+  
+  .item{
+    text-align:center;
+    }
+  .carousel-inner img{
+    display:inline-block  !important;
+    }
