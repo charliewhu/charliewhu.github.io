@@ -4,9 +4,13 @@ ul.no-bullets {
     margin: 0; /* Remove margins */
   }
   
-  .item{
-    text-align:center;
-    }
-  .carousel-inner img{
-    display:inline-block  !important;
-    }
+.item{
+  text-align:center;
+}
+.carousel-inner img{
+  display:inline-block  !important;
+}
+
+a:link {
+  text-decoration: none;
+}
