@@ -1,3 +1,28 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+
+/* section::before {
+  content: "";
+  display: block;
+  padding-top: 100px;
+  margin-top: -100px 0 0;
+} */
+
+section {
+  scroll-margin-top: 60px;
+}
+
+.bg-gray-8 {
+  background-color: #1a1b1d!important;
+}
+
 ul.no-bullets {
     list-style-type: none; /* Remove bullets */
     padding: 0; /* Remove padding */
@@ -17,4 +42,8 @@ a:link {
 
 a:hover {
   text-decoration: underline;
+}
+
+.nav-bar-brand a:hover {
+  text-decoration: none;
 }

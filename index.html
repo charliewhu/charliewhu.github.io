@@ -7,12 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
 
     <!-- CSS Stylesheet  -->
     <link rel="stylesheet" href="style.css">
+
+
+    <link rel="apple-touch-icon" href="https://static.djangoproject.com/img/icon-touch.e4872c4da341.png">
 
     <title>Charlie Avery</title>
 </head>
@@ -20,9 +29,9 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark py-3">
         <div class="container">
-            <a href="#" class="navbar-brand">
+            <a href="#" class="navbar-brand text-decoration-none">
                 <i class="bi bi-terminal"></i>
                 <i class="bi bi-code-square"></i>
                 <i class="bi bi-graph-up"></i>
@@ -50,7 +59,7 @@
                         <a href="#background" class="nav-link">Background</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#tech" class="nav-link">Tech</a>
+                        <a href="#toolbox" class="nav-link">Toolbox</a>
                     </li>
                     <li class="nav-item dropdown bg-dark navbar-dark">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
@@ -77,7 +86,7 @@
     </nav>
 
     <!-- Intro Section -->
-    <section class="bg-dark text-light p-5 text-center text-sm-start">
+    <section class="bg-dark text-light p-5 text-center text-sm-start" id="background">
         <div class="container">
             <div class="d-sm-flex align-items-center justify-content-between">
                 <div class="mb-5 mx-1">
@@ -99,89 +108,50 @@
         </div>
     </section>
 
+    <!-- Toolbox -->
+    <section class="bg-gray-8 text-light p-5" id="toolbox">
+        <div class="container text-center">
+            <div class="h1">My Toolbox</div>
+        </div>
+    </section>
 
-    <!-- My Tech Stack -->
-    <section class="p-5 text-center " id='tech'>
-        <div class="h1">Tech Stack</div>
+    <section class="bg-dark p-5 text-center" id=''>
         <div class="container">
-            <div class="row my-3 g-4">
-                <div class="col-md">
-                    <div class="card bg-dark text-light h-100">
+            <div class="h2 text-light mb-5">Code</div>
+            <div class="row g-4">
+
+                <div class="col-sm">
+                    <div class="card bg-gray-8 text-light h-100">
                         <div class="card-body">
-                            <div class="h3 card-title my-3">
-                                Skills
-                            </div>
-                            <p class="card-text">
-                            <ul class="no-bullets">
-                                <li>Data Modelling</li>
-                                <li>Data Wrangling</li>
-                                <li>Full-Stack Development</li>
-                                <li>Database Development</li>
-                                <li>Process Automation</li>
-                                <li>Insight Analysis</li>
-                            </ul>
-                            </p>
+                            <i class="fas fa-database fa-2x mt-3"></i>
+                            <h4 class="my-3">SQL</h4>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md">
-                    <div class="card bg-dark text-light h-100">
+                <div class="col-sm">
+                    <div class="card bg-gray-8 text-light h-100">
                         <div class="card-body">
-                            <div class="h3 card-title my-3">
-                                Code
-                            </div>
-                            <p class="card-text">
-                            <ul class="no-bullets">
-                                <li>Python</li>
-                                <li>R</li>
-                                <li>SQL</li>
-                                <li>HTML/CSS</li>
-                                <li>VBA</li>
-                                <li>SPSS</li>
-                                <li>Git / Github</li>
-                            </ul>
-                            </p>
+                            <i class="fab fa-python fa-2x mt-3"></i>
+                            <h4 class="my-3">Python</h4>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md">
-                    <div class="card bg-dark text-light h-100">
+                <div class="col-sm">
+                    <div class="card bg-gray-8 text-light h-100">
                         <div class="card-body">
-                            <div class="h3 card-title my-3">
-                                Frameworks + Packages
-                            </div>
-                            <p class="card-text">
-                            <ul class="no-bullets">
-                                <li>Django (Python)</li>
-                                <li>Pandas (Python)</li>
-                                <li>Tidyverse (R)</li>
-                                <li>Bootstrap (HTML/CSS)</li>
-                                <li>SQL Server</li>
-                                <li>PostgreSQL</li>
-                                <li>AWS S3</li>
-                            </ul>
-                            </p>
+                            <i class="fab fa-r-project fa-2x mt-3"></i>
+                            <h4 class="my-3">R</h4>
                         </div>
                     </div>
                 </div>
-                <div class="col-md">
-                    <div class="card bg-dark text-light h-100">
+
+                <div class="col-sm">
+                    <div class="card bg-gray-8 text-light h-100">
                         <div class="card-body">
-                            <div class="h3 card-title my-3">
-                                Software
-                            </div>
-                            <p class="card-text">
-                            <ul class="no-bullets">
-                                <li>Tableau</li>
-                                <li>Power BI</li>
-                                <li>VS Code</li>
-                                <li>RStudio</li>
-                                <li>MS Office</li>
-                                <li>FastStats</li>
-                            </ul>
-                            </p>
+                            <i class="fas fa-table fa-2x mt-3"></i>
+                            <h4 class="my-3">VBA</h4>
                         </div>
                     </div>
                 </div>
@@ -190,10 +160,120 @@
         </div>
     </section>
 
+    <section class="bg-gray-8 p-5 text-center" id=''>
+        <div class="container">
+            <div class="h2 text-light mb-5">Web</div>
+
+            <div class="row g-4">
+
+                <div class="col-sm">
+                    <div class="card bg-dark text-light h-100">
+                        <div class="card-body">
+                            <i class="bx bxl-django bx-md mt-3"></i>
+                            <h4 class="my-3">Django</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm">
+                    <div class="card bg-dark text-light h-100">
+                        <div class="card-body">
+                            <i class="fab fa-html5 fa-2x mt-3"></i>
+                            <h4 class="my-3">HTML</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card bg-dark text-light h-100">
+                        <div class="card-body">
+                            <i class="fab fa-css3-alt fa-2x mt-3"></i>
+                            <h4 class="my-3">CSS</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card bg-dark text-light h-100">
+                        <div class="card-body">
+                            <i class="fab fa-js fa-2x mt-3"></i>
+                            <h4 class="my-3">JavaScript</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card bg-dark text-light h-100">
+                        <div class="card-body">
+                            <i class="fab fa-bootstrap fa-2x mt-3"></i>
+                            <h4 class="my-3">Bootstrap</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark p-5 text-center" id=''>
+        <div class="container">
+            <div class="h2 text-light mb-5">General</div>
+
+            <div class="row g-4">
+
+                <div class="col-sm">
+                    <div class="card bg-gray-8 text-light h-100">
+                        <div class="card-body">
+                            <i class="fab fa-git-alt fa-2x mt-3"></i>
+                            <h4 class="my-3">Git</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card bg-gray-8 text-light h-100">
+                        <div class="card-body">
+                            <i class="fab fa-github fa-2x mt-3"></i>
+                            <h4 class="my-3">Github</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card bg-gray-8 text-light h-100">
+                        <div class="card-body">
+                            <i class="bx bx-bar-chart bx-md mt-3"></i>
+                            <h4 class="my-3">Power BI</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card bg-gray-8 text-light h-100">
+                        <div class="card-body">
+                            <i class="bx bx-table bx-md mt-3"></i>
+                            <h4 class="my-3">Tableau</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card bg-gray-8 text-light h-100">
+                        <div class="card-body">
+                            <i class="bx bxl-visual-studio bx-md mt-3"></i>
+                            <h4 class="my-3">VS Code</h4>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
 
     <!-- Projects section -->
 
-    <section class="bg-dark text-light p-5" id="projects">
+    <section class="bg-gray-8 text-light p-5" id="projects">
         <div class="container text-center">
             <div class="h1 mb-5">Projects</div>
             <p>
@@ -317,9 +397,7 @@
                             </p>
                         </div>
                     </div>
-
                 </div>
-
 
                 <div class="col-md">
                     <div class="container">
@@ -357,7 +435,86 @@
         </div>
     </section>
 
-    <section class="p-5" id="project-placeholder">
+    <section class="p-5" id="project-crm">
+        <div class="container text-center">
+            <h2 class="mb-5">
+                <a href="https://charlieavery-djangocrm.herokuapp.com/" target="_blank">
+                    CRM App
+                </a>
+            </h2>
+
+            <div class="row align-items-center justify-content-between g-4">
+
+                <div class="col-md">
+                    <div class="container">
+                        <div id="carousel1" class="carousel carousel-dark slide" data-bs-interval="false">
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active  justify-content-center item">
+                                    <img src="images/CRM1.PNG" class="d-block img-fluid w-100 mx-1" alt="...">
+                                </div>
+
+                                <div class="carousel-item item">
+                                    <img src="images/CRM2.PNG" class="d-block img-fluid w-100 mx-1" alt="...">
+                                </div>
+
+                                <div class="carousel-item item">
+                                    <img src="images/CRM3.PNG" class="d-block img-fluid w-100 mx-1" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <p>
+                        This is my first deployed Django web project. It is based on a tutorial by Dennis Ivy, with modified frontend elements and a custom user model of my own.
+                    </p> 
+                    <p>
+                        The app has a Postgres server database, uses an AWS S3 bucket for staticfiles, and is hosted by Heroku.
+                    </p>
+
+                    <div class="card ">
+                        <div class="card-body">
+                            <div class="h4 card-title my-3">
+                                Features + Tech
+                            </div>
+                            <p class="card-text">
+                            <div class="row">
+                                <div class="col">
+                                    <ul class="no-bullets">
+                                        <li>Django (Python)</li>
+                                        <li>PostgreSQL, AWS S3, Heroku</li>
+                                        <li>HTML/CSS + Bootstrap</li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul class="no-bullets">
+                                        <li>Custom User Model</li>
+                                        <li>User Account Page </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light p-5" id="project-placeholder">
         <div class="container text-center">
             <h2 class=" mb-5">Placeholder</h2>
 
