@@ -23,15 +23,24 @@ section {
   background-color: #1a1b1d!important;
 }
 
+.bg-gray-7 {
+  background-color: #202122!important;
+}
+
+
+
 ul.no-bullets {
     list-style-type: none; /* Remove bullets */
+    line-height: 180%;
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margins */
+    height: 100%;
   }
   
 .item{
   text-align:center;
 }
+
 .carousel-inner img{
   display:inline-block  !important;
 }
